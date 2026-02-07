@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta property="og:title" content="Join Paradox Studio">
     <meta property="og:image" content="icon.png">
-    <meta description="Become a team member of our company.Become developer,ui/ux designer,manager.>
+    <meta name="description" content="Become a team member of our company. Become developer, ui/ux designer, manager.">
     <title>Become A Team Member | Paradox Studio</title> 
+    
     <style> 
         body { background-color: #0d1117; color: white; font-family: Arial, sans-serif; margin: 0; padding: 0; }
 
@@ -28,7 +29,6 @@
 
         .ghost-btn:hover { background-color: #00ecff; color: black; box-shadow: 0 0 20px #00ecff; transform: scale(1.05); }
 
-        /* --- GRID STYLING (Missing Part) --- */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -52,37 +52,28 @@
             transform: translateY(-5px);
         }
 
-        .item-grid h1 {
-            font-size: 24px;
-            color: #00ecff;
-            margin-bottom: 10px;
-        }
+        .item-grid h1 { font-size: 24px; color: #00ecff; margin-bottom: 10px; }
+        .item-grid p { color: #8b949e; font-size: 14px; }
 
-        .item-grid p {
-            color: #8b949e;
-            font-size: 14px;
-        }
+        /* Text Container Style Fix */
         .text-container {
-            background: #808080;
-            border: 1px solid #808000;
-            padding: 20px;
-            border-radius: 50px;
+            background: #161b22; /* I recommend dark background like grid */
+            border: 1px solid #30363d;
+            padding: 40px;
+            border-radius: 20px;
             text-align: center;
+            max-width: 900px;
+            margin: 40px auto;
             transition: 0.3s;
         }
+
         .text-container:hover {
             border-color: #00ecff;
             transform: translateY(-5px);
         }
-        .text-container h1 {
-            font-size: 24px;
-            color: #00ecff;
-            margin-bottom: 10px;
-        }
-        .text-container p {
-            color: ##87CEEB;
-            font-size: 14px;
-        }
+
+        .text-container h1 { font-size: 28px; color: #00ecff; margin-bottom: 15px; }
+        .text-container p { color: #87CEEB; font-size: 16px; line-height: 1.6; }
     </style>
 </head> 
 <body>
@@ -122,13 +113,13 @@
         <p style="color: #ff7b72;">Status: Empty</p>
     </div>
 </section>
+
 <section>
     <div class="text-container">
         <h1>Why Join Us?</h1>
         <p>Join us because we give you training for work and lead for developing websites properly and develop your favourite site easily.</p>
-        <p style="color: ##87CEE">Are you ready?</p>
-    </div>
-</section>
+        <p style="color: #87CEEB;">Are you ready?</p>
+    </div> </section>
 
 </body> 
 </html>
