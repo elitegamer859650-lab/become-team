@@ -1,0 +1,118 @@
+<DOCTYPE.html!>
+<html>
+  <head>
+    <meta chrest="UTF-8">
+    <meta name="viewport" content="width-device-width, intial-scale=1.0">
+    <meta property="og:title" content="Join Paradox studio'>
+    <meta property="og:image" content="icon.png">
+    <meta name="description" content="Become a team member of our company. Become developer, ui/ux designer, manager.">
+    <title>Apply To Become Member</title>
+
+    <style>
+      body { background-color: #0d1117; color: white; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+        .main-header { background-color: rgba(10, 10, 10, 0.95); padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #00ecff; }
+
+        .logo { color: #00ecff; font-size: 24px; font-weight: bold; text-shadow: 0 0 10px #00ecff; }
+
+        nav a { color: white; margin-left: 20px; text-decoration: none; font-size: 16px; transition: 0.3s; }
+
+        nav a:hover { color: #00ecff; text-shadow: 0 0 5px #00ecff; }
+      .form-container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #161b22;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #30363d;
+            text-align: center;
+        }
+
+        .input-group { margin-bottom: 20px; text-align: left; }
+        .input-group label { display: block; color: #00ecff; margin-bottom: 8px; font-weight: bold; }
+        
+        .input-group input, .input-group textarea {
+            width: 100%; padding: 12px; background: #0d1117; border: 1px solid #30363d;
+            color: white; border-radius: 8px; outline: none; box-sizing: border-box;
+        }
+
+        .input-group input:focus { border-color: #00ecff; }
+
+        .ghost-btn {
+            background-color: #008b8b; color: white; padding: 15px 60px;
+            font-size: 18px; font-weight: bold; border: 2px solid #00ecff;
+            border-radius: 50px; cursor: pointer; transition: 0.4s; width: 100%;
+        }
+
+        .ghost-btn:hover { background-color: #00ecff; color: black; box-shadow: 0 0 20px #00ecff; }
+      
+    </style>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <div class="logo">Apply for team</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="apply.html">Apply</a>
+      </nav>
+      <section class="form-container">
+        <h1 style="color:#00ecff">Apply Now</h1>
+        <p>Fill your details.</p>
+
+        <div class="input-group">
+          <label>Your Name</label>
+          <input type="text" id="username" placeholder="Enter full name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Posistion</label>
+          <input type="text" id="userRole" placeholder="Developer/Manager?" required>
+        </div>
+
+        <div class="input-group">
+          <label>Your Education</label>
+          <input type="number" id="userStudy" placeholder="8,9,10,11,12,13,14,15,16" required>
+        </div>
+
+        <div class="input-group">
+          <label>Your Age</label>
+          <input type="number" id="userAge" placeholder="18,19,20" required>
+        </div>
+
+        <div class="input-group">
+          <label>Why you want to join us?</label>
+          <input type="description" id="userReason" placeholder="I want to join becuase......" required>
+        </div>
+
+        <button type="button" class="ghost-btn" oneclick="sendToWhatsapp()">Submit</button>
+      </section>
+        <script>
+        function sendToWhatsApp() {
+            let name = document.getElementById('userName').value;
+            let role = document.getElementById('userRole').value;
+            let study = document.getElementById('userStudy').value;
+            let age = document.getElementById('userage').value;
+            let reason = document.getElementById('userreason').value;
+            if(name == "" || role == "" || study =="" || age =="" || reason == "") {
+                alert("These all fields are required! ");
+                return;
+            }
+
+            // --- APNA NUMBER YAHAN DALO ---
+            let myNumber = "923096602143"; 
+
+            let finalMsg = "🔥 *New Paradox Application* 🔥%0a%0a" + 
+                           "*Name:* " + name + "%0a" + 
+                           "*Role:* " + role + "%0a" + 
+                           "*study:* " + study;
+                           "*age:* " + age;
+                           "*reason:* " + reason;
+
+            let url = "https://wa.me/" + myNumber + "?text=" + finalMsg;
+            
+            window.open(url, '_blank').focus();
+        }
+    </script>
+  </body>
+</html>
