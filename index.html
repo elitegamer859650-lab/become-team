@@ -1,65 +1,103 @@
 <!DOCTYPE html>
 <html> 
-  <head> 
+<head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Become A Team Member | Paradox Studio</title> 
-    <style> body { background-color: #0d1117; color: white; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    <style> 
+        body { background-color: #0d1117; color: white; font-family: Arial, sans-serif; margin: 0; padding: 0; }
 
-.main-header { background-color: rgba(10, 10, 10, 0.95); padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #00ecff; }
+        .main-header { background-color: rgba(10, 10, 10, 0.95); padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #00ecff; }
 
-.logo { color: #00ecff; font-size: 24px; font-weight: bold; text-shadow: 0 0 10px #00ecff; }
+        .logo { color: #00ecff; font-size: 24px; font-weight: bold; text-shadow: 0 0 10px #00ecff; }
 
-nav a { color: white; margin-left: 20px; text-decoration: none; font-size: 16px; transition: 0.3s; }
+        nav a { color: white; margin-left: 20px; text-decoration: none; font-size: 16px; transition: 0.3s; }
 
-nav a:hover { color: #00ecff; text-shadow: 0 0 5px #00ecff; }
+        nav a:hover { color: #00ecff; text-shadow: 0 0 5px #00ecff; }
 
-.banner { height: 500px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('bg.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; }
+        .banner { height: 500px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('bg.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; }
 
-.banner h1 { font-size: 50px; letter-spacing: 5px; color: #00ecff; text-shadow: 0 0 15px #00ecff; margin: 0; }
+        .banner h1 { font-size: 50px; letter-spacing: 5px; color: #00ecff; text-shadow: 0 0 15px #00ecff; margin: 0; }
 
-.banner p { font-size: 18px; margin: 15px 0 30px 0; color: #ccc; }
+        .banner p { font-size: 18px; margin: 15px 0 30px 0; color: #ccc; }
 
-.ghost-btn { background-color: #008b8b; color: white; padding: 15px 80px; font-size: 18px; font-weight: bold; border: 2px solid #00ecff; border-radius: 50px; text-shadow: 0 0 6px #00ecff; cursor: pointer; transition: 0.4s; text-transform: uppercase; }
+        .ghost-btn { background-color: #008b8b; color: white; padding: 15px 80px; font-size: 18px; font-weight: bold; border: 2px solid #00ecff; border-radius: 50px; text-shadow: 0 0 6px #00ecff; cursor: pointer; transition: 0.4s; text-transform: uppercase; }
 
-.ghost-btn:hover { background-color: #00ecff; color: black; box-shadow: 0 0 20px #00ecff; transform: scale(1.05); } </style>
+        .ghost-btn:hover { background-color: #00ecff; color: black; box-shadow: 0 0 20px #00ecff; transform: scale(1.05); }
 
+        /* --- GRID STYLING (Missing Part) --- */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .item-grid {
+            background: #161b22;
+            border: 1px solid #30363d;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .item-grid:hover {
+            border-color: #00ecff;
+            transform: translateY(-5px);
+        }
+
+        .item-grid h1 {
+            font-size: 24px;
+            color: #00ecff;
+            margin-bottom: 10px;
+        }
+
+        .item-grid p {
+            color: #8b949e;
+            font-size: 14px;
+        }
+    </style>
 </head> 
-  <body>
+<body>
 
 <header class="main-header"> 
-  <div class="logo">Become A Team Member</div> 
-  <nav> 
-    <a href="index.html">Home</a> 
-    <a href="apply.html">Apply</a> 
-  </nav> 
+    <div class="logo">Become A Team Member</div> 
+    <nav> 
+        <a href="index.html">Home</a> 
+        <a href="apply.html">Apply</a> 
+    </nav> 
 </header>
 
 <section class="banner"> 
-  <div class="banner-content"> 
-    <h1>BECOME A MEMBER</h1> 
-    <p>Become a team member of our company.Apply for job.Join The force</p> 
-    <a href="apply.html" style="text-decoration: none;"> 
-      <button class="ghost-btn">Join the force</button> 
-    </a> 
-  </div> 
+    <div class="banner-content"> 
+        <h1>BECOME A MEMBER</h1> 
+        <p>Become a team member of our company. Apply for job. Join The force</p> 
+        <a href="apply.html" style="text-decoration: none;"> 
+            <button class="ghost-btn">Join the force</button> 
+        </a> 
+    </div> 
 </section>
+
 <section class="grid-container">
-  <div class="item-grid">
-    <h1>lead Developer</h1>
-  <p>A Developer who lead the team of our developers.</p>
- <p>status:Empty</p>
-  </div>
-  <div class="item-grid">
-    <h1>UI/UX Designer</h1>
-     <p>A Member who design ui/ux for our compnay.</p>
-      <p>status:Empty</p>
-  </div>
-  <div class="item-grid">
-    <h1>Manager</h1>
-     <p>A Member who manage our company projects,admins.</p>
-      <p>status:Emty</p>
-  </div>
+    <div class="item-grid">
+        <h1>Lead Developer</h1>
+        <p>A Developer who leads our team of developers.</p>
+        <p style="color: #ff7b72;">Status: Empty</p>
+    </div>
+    <div class="item-grid">
+        <h1>UI/UX Designer</h1>
+        <p>A Member who designs UI/UX for our company.</p>
+        <p style="color: #ff7b72;">Status: Empty</p>
+    </div>
+    <div class="item-grid">
+        <h1>Manager</h1>
+        <p>A Member who manages our company projects and admins.</p>
+        <p style="color: #ff7b72;">Status: Empty</p>
+    </div>
 </section>
- </body> 
-   </html>
+
+</body> 
+</html>
